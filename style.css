@@ -1,0 +1,56 @@
+.container {
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.meme__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+}
+
+.meme__box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 512px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.meme__line {
+    background-color: black;
+    height: 1px;
+}
+
+.meme__title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.meme__cross {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.meme__img {
+    max-width: 512px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.meme__block:hover .meme__img {
+    transition: all ease 0.5s;
+    display: block;
+}
+
+.meme__block:hover .meme__cross {
+    transition: all ease 0.5s;
+    transform: rotate(45deg);
+}
+
+input {
+    display: none;
+   }
+
+input:checked ~ img {
+    display: block;
+}
